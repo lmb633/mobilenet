@@ -19,7 +19,6 @@ def conv_dw(inchannel, outchannel, stride, leak=0.1):
         nn.Conv2d(inchannel, outchannel, 1, 1, 0, bias=False),
         nn.BatchNorm2d(outchannel),
         nn.LeakyReLU(leak, True)
-
     )
 
 
