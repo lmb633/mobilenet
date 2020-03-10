@@ -64,4 +64,4 @@ if __name__ == '__main__':
     squeezenet = SqueezeNet()
     x = torch.randn(1, 3, 128, 128)
     out = squeezenet(x)
-    print(out.shape)
+    print(out.data.size())
